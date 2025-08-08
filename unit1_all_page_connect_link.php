@@ -7,6 +7,7 @@ $programs = [
     ['Month Name Finder', 'unit1_04_06_08_2025.php'],
     ['For and ForEach Loop', 'unit1_05_06_08_2025.php'],
     ['While and Do While Loop', 'unit1_06_06_08_2025.php'],
+    ['Include and Require Function', 'unit1_07_06_08_2025.php'],
 ];
 
 echo "<!DOCTYPE html>";
