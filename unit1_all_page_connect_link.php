@@ -11,7 +11,8 @@ $units = [
         ['Array with Various Function', 'UNIT1/unit1_08_08_08_2025.php'],
     ],
     'Unit 2' => [
-        ['Program A', 'UNIT2/unit2_01_10_08_2025.php'],
+        ['Numeric, Associative, Multidimensional Array', 'UNIT2/unit2_01_22_08_2025.php'],
+        ['Sorting An Array Entered By User', 'UNIT2/unit2_02_22_08_2025.php'],
         
     ],
     'Unit 3' => [
