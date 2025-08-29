@@ -26,6 +26,14 @@ $units = [
         ['Program One', 'UNIT5/unit5_01_05_09_2025.php'],
 
     ],
+    'Lab Work' => [
+        ['Lab 1: User Input Sanitization for Web Forms', 'Lab_Work/lab_work5_task1_29_08_2025.php'],
+        ['Lab 2: Secure Token Generation for Password Reset', 'Lab_Work/lab_work5_task2_29_08_2025.php'],
+        ['Lab 3: Name Formatting for Certificates', 'Lab_Work/lab_work5_task3_29_08_2025.php'],
+        ['Lab 4: CSV Parsing for Batch Evaluation', 'Lab_Work/lab_work5_task4_29_08_2025.php'],
+        ['Lab 5: Comment Moderation System', 'Lab_Work/lab_work5_task5_29_08_2025.php'],
+        
+    ],
 ];
 
 echo "<!DOCTYPE html>";
