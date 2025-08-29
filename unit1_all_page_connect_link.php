@@ -16,14 +16,14 @@ $units = [
         
     ],
     'Unit 3' => [
-        ['Program X', 'UNIT3/unit3_01_20_08_2025.php'],
+        ['Program X', '#'],
     ],
     'Unit 4' => [
-        ['Program Alpha', 'UNIT4/unit4_01_25_08_2025.php'],
+        ['Program Alpha', '#'],
 
     ],
     'Unit 5' => [
-        ['Program One', 'UNIT5/unit5_01_05_09_2025.php'],
+        ['Program One', '#'],
 
     ],
     'Lab Work' => [
