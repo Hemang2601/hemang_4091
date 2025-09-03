@@ -1,4 +1,6 @@
 <?php
+echo "<h2 style='text-align:center; font-family: Arial, sans-serif; margin-top:30px; margin-bottom: 40px; color: #2c3e50;'>PHP String Functions Demonstration</h2>";
+
 // Your message
 $text = "Hello i am hemang lakhadiya.I am 21 year old.";
 
@@ -69,7 +71,6 @@ $upper = strtoupper($text);
 </head>
 <body>
 
-<h2>PHP String Functions Demonstration</h2>
 
 <div class="section">
     <h3>Original Message:</h3>

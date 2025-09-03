@@ -14,7 +14,8 @@ $units = [
         ['Numeric, Associative, Multidimensional Array', 'UNIT2/unit2_01_22_08_2025.php'],
         ['Sorting An Array Entered By User', 'UNIT2/unit2_02_22_08_2025.php'],
         ['PHP Array Functions Demonstration', 'UNIT2/unit2_03_03_09_2025.php'],
-        ['PHP Array Functions Demonstration', 'UNIT2/unit2_04_03_09_2025.php'],
+        ['PHP String Functions Demonstration', 'UNIT2/unit2_04_03_09_2025.php'],
+        ['PHP Type Casting with settype() and gettype()', 'UNIT2/unit2_05_03_09_2025.php'],
         
     ],
     'Unit 3' => [
