@@ -16,6 +16,7 @@ $units = [
         ['PHP Array Functions Demonstration', 'UNIT2/unit2_03_03_09_2025.php'],
         ['PHP String Functions Demonstration', 'UNIT2/unit2_04_03_09_2025.php'],
         ['PHP Type Casting with settype() and gettype()', 'UNIT2/unit2_05_03_09_2025.php'],
+        ['Simple Calculator using User Defined Function', 'UNIT2/unit2_06_03_09_2025.php'],
         
     ],
     'Unit 3' => [
