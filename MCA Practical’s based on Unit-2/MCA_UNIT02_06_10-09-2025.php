@@ -1,10 +1,10 @@
 <?php
 echo "<h2 style='text-align:center; font-family: Arial, sans-serif; margin-top:30px; margin-bottom: 40px; color: #2c3e50;'>Academic Calendar Display</h2>";
 
-date_default_timezone_set('Asia/Kolkata'); // Set timezone to India
+date_default_timezone_set('Asia/Kolkata'); 
 
-$current_date = date('l, F j, Y');  // Example: Tuesday, September 10, 2025
-$current_time = date('h:i A');       // Example: 04:30 PM
+$current_date = date('l, F j, Y');  
+$current_time = date('h:i A');       
 
 ?>
 
