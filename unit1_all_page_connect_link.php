@@ -38,6 +38,15 @@ $units = [
         ['Lab 5: Comment Moderation System', 'Lab_Work/lab_work5_task5_29_08_2025.php'],
         
     ],
+    'MCA Practical’s based on Unit-2' => [
+        ['User Authentication Using Functions', 'MCA Practical’s based on Unit-2/MCA_UNIT02_01_10-09-2025.php'],
+        ['Event Countdown Using Date and Time Functions', 'MCA Practical’s based on Unit-2/MCA_UNIT02_02_10-09-2025.php'],
+        ['Survey Data Analysis Using Arrays and Functions', 'MCA Practical’s based on Unit-2/MCA_UNIT02_03_10-09-2025.php'],
+        ['Plugin System with Function Existence Check', 'MCA Practical’s based on Unit-2/MCA_UNIT02_04_10-09-2025.php'],
+        ['Resume Generator Using String Formatting', 'MCA Practical’s based on Unit-2/MCA_UNIT02_05_10-09-2025.php'],
+        ['Academic Calendar Display', 'MCA Practical’s based on Unit-2/MCA_UNIT02_06_10-09-2025.php'],
+
+    ],
 ];
 
 echo "<!DOCTYPE html>";

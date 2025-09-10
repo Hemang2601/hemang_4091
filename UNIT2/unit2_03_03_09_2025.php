@@ -1,7 +1,6 @@
 <?php
 echo "<h2 style='text-align:center; font-family: Arial, sans-serif; margin-top:30px; margin-bottom: 40px; color: #2c3e50;'>PHP Array Functions Demonstration</h2>";
 
-// Sample array for demonstration
 $months = [
     "Jan" => "January",
     "Feb" => "February",
