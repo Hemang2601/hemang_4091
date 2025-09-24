@@ -233,6 +233,7 @@ echo "<style>
         display: inline-block;
         text-align: center;
         min-width: 80px;
+        cursor: pointer;
     }
     table.program-table tbody td a.button-link:hover,
     table.program-table tbody td a.button-link:focus {
@@ -322,7 +323,67 @@ echo "<style>
             padding: 0.3rem 0.6rem;
         }
     }
+
+    /* Modal popup styles */
+    #modalOverlay {
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0,0,0,0.6);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 2000;
+        animation: fadeIn 0.3s ease forwards;
+    }
+    #modalContent {
+        position: relative;
+        width: 90%;
+        max-width: 1000px;
+        height: 80vh;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        animation: slideUp 0.3s ease forwards;
+    }
+    #modalContent iframe {
+        flex-grow: 1;
+        border: none;
+        border-radius: 0 0 12px 12px;
+        width: 100%;
+        height: 100%;
+    }
+    #modalCloseBtn {
+        background: var(--clr-primary);
+        color: white;
+        border: none;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 0.6rem 1.2rem;
+        cursor: pointer;
+        border-radius: 12px 12px 0 0;
+        user-select: none;
+        transition: background-color 0.3s ease;
+        align-self: flex-end;
+    }
+    #modalCloseBtn:hover,
+    #modalCloseBtn:focus {
+        background: var(--clr-primary-hover);
+        outline: none;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+    @keyframes slideUp {
+        from {transform: translateY(20px);}
+        to {transform: translateY(0);}
+    }
 </style>";
+
 echo "</head>";
 echo "<body>";
 
@@ -344,7 +405,7 @@ foreach ($units as $unitName => $programs) {
     echo "<table class='program-table'>";
     echo "<caption>$unitName Programs</caption>";
     echo "<thead>";
-    echo "<tr><th>No.</th><th>Program Name</th><th>Link</th></tr>";
+    echo "<tr><th>No.</th><th>Program Name</th><th>Open</th></tr>";
     echo "</thead>";
     echo "<tbody>";
     foreach ($programs as $index => $program) {
@@ -356,7 +417,8 @@ foreach ($units as $unitName => $programs) {
         if ($progLink === '#') {
             echo "<td style='color:#9ca3af; font-style:italic;'>Coming Soon</td>";
         } else {
-            echo "<td><a href='$progLink' class='button-link' target='_blank' rel='noopener noreferrer'>Open</a></td>";
+            // Use a button-link with data-url for JS popup
+            echo "<td><a href='#' class='button-link open-popup' data-url='$progLink' tabindex='0'>Open</a></td>";
         }
         echo "</tr>";
     }
@@ -365,6 +427,57 @@ foreach ($units as $unitName => $programs) {
     echo "</section>";
 }
 echo "</main>";
+
+
+// Modal popup container
+echo <<<HTML
+<div id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div id="modalContent">
+        <button id="modalCloseBtn" aria-label="Close popup">&times; Close</button>
+        <iframe src="" frameborder="0" title="Program Content"></iframe>
+    </div>
+</div>
+HTML;
+
+echo "<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const modalOverlay = document.getElementById('modalOverlay');
+    const modalCloseBtn = document.getElementById('modalCloseBtn');
+    const iframe = modalOverlay.querySelector('iframe');
+    const openLinks = document.querySelectorAll('.open-popup');
+
+    openLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const url = this.getAttribute('data-url');
+            iframe.src = url;
+            modalOverlay.style.display = 'flex';
+            modalCloseBtn.focus();
+            document.body.style.overflow = 'hidden'; // prevent background scroll
+        });
+    });
+
+    modalCloseBtn.addEventListener('click', function() {
+        iframe.src = '';
+        modalOverlay.style.display = 'none';
+        document.body.style.overflow = ''; // restore scroll
+    });
+
+    // Close popup if click outside modalContent
+    modalOverlay.addEventListener('click', function(e) {
+        if (e.target === modalOverlay) {
+            modalCloseBtn.click();
+        }
+    });
+
+    // Close popup on ESC key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modalOverlay.style.display === 'flex') {
+            modalCloseBtn.click();
+        }
+    });
+});
+</script>";
 
 echo "</body>";
 echo "</html>";
