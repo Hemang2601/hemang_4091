@@ -42,7 +42,9 @@ $units = [
         ['Resume Generator Using String Formatting', 'MCA Practical’s based on Unit-2/MCA_UNIT02_05_10-09-2025.php'],
         ['Academic Calendar Display', 'MCA Practical’s based on Unit-2/MCA_UNIT02_06_10-09-2025.php'],
         ['Grade Calculator Demonstrating Variable Scope', 'MCA Practical’s based on Unit-2/MCA_UNIT02_07_24-09-2025.php'],
-        ['Grade Calculator Demonstrating Variable Scope', 'MCA Practical’s based on Unit-2/MCA_UNIT02_08_24-09-2025.php'],
+        ['Inventory Checker Using Arrays and Functions', 'MCA Practical’s based on Unit-2/MCA_UNIT02_08_24-09-2025.php'],
+        ['Date Difference Calculator Using DateTime', 'MCA Practical’s based on Unit-2/MCA_UNIT02_09_26-09-2025.php'],
+        ['Keyword Search in Research Abstracts', 'MCA Practical’s based on Unit-2/MCA_UNIT02_10_26-09-2025.php'],
     ],
 ];
 
