@@ -46,6 +46,16 @@ $units = [
         ['Date Difference Calculator Using DateTime', 'MCA Practical’s based on Unit-2/MCA_UNIT02_09_26-09-2025.php'],
         ['Keyword Search in Research Abstracts', 'MCA Practical’s based on Unit-2/MCA_UNIT02_10_26-09-2025.php'],
     ],
+    'MCA Unit – 3 Extra Practical’s for LAB' => [
+        ['Login Validation', 'MCA Unit – 3 Extra Practical’s for LAB/MCA_UNIT03_01_26-09-2025.php'],
+        ['User Registration via GET', 'MCA Unit – 3 Extra Practical’s for LAB/MCA_UNIT03_02_26-09-2025.php'],
+        ['File Upload', 'MCA Unit – 3 Extra Practical’s for LAB/MCA_UNIT03_03_26-09-2025.php'],
+        ['Personalized Experience with Cookies', 'MCA Unit – 3 Extra Practical’s for LAB/MCA_UNIT03_04_26-09-2025.php'],
+        ['Logging Requests', 'MCA Unit – 3 Extra Practical’s for LAB/MCA_UNIT03_05_26-09-2025.php'],
+        ['Session Timeout', 'MCA Unit – 3 Extra Practical’s for LAB/MCA_UNIT03_06_26-09-2025.php'],
+        ['Universal Access', 'MCA Unit – 3 Extra Practical’s for LAB/MCA_UNIT03_07_26-09-2025.php'],
+        ['Config-Based Environment Setup', 'MCA Unit – 3 Extra Practical’s for LAB/MCA_UNIT03_08_26-09-2025.php'],
+    ],
 ];
 
 function to_anchor_id($str) {
