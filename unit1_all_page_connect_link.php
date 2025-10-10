@@ -17,6 +17,9 @@ $units = [
         ['PHP String Functions Demonstration', 'UNIT2/unit2_04_03_09_2025.php'],
         ['PHP Type Casting with settype() and gettype()', 'UNIT2/unit2_05_03_09_2025.php'],
         ['Simple Calculator using User Defined Function', 'UNIT2/unit2_06_03_09_2025.php'],
+        ['MySQL String Functions', 'UNIT2/unit2_07_10_10_2025.php'],
+        ['MySQL Date and Time Functions', 'UNIT2/unit2_08_10_10_2025.php'],
+        ['MySQL Date and Time Functions', 'UNIT2/unit2_09_10_10_2025.php'],
     ],
     'Unit 3' => [
         ['Program X', '#'],
