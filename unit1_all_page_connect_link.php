@@ -22,7 +22,16 @@ $units = [
         ['MySQL Date and Time Functions', 'UNIT2/unit2_09_10_10_2025.php'],
     ],
     'Unit 3' => [
-        ['Program X', '#'],
+        ['Create Cookie', 'UNIT3/unit3_01_31_10_2025.php'],
+        ['Read Cookie', 'UNIT3/unit3_02_31_10_2025.php'],
+        ['Use Cookie with Header', 'UNIT3/unit3_03_31_10_2025.php'],
+        ['Delete Cookie', 'UNIT3/unit3_04_31_10_2025.php'],
+        ['Session Created', 'UNIT3/unit3_05_31_10_2025.php'],
+        ['Session Destroy', 'UNIT3/unit3_06_31_10_2025.php'],
+        ['Login System with Session and Logout', 'UNIT3/unit3_07_31_10_2025.php'],
+        ['Visitor Recognition System', 'UNIT3/unit3_08_31_10_2025.php'],
+        ['Login with "Remember Me" Using Cookies', 'UNIT3/unit3_09_31_10_2025.php'],
+        ['Prepared statements to prevent SQL injection', 'UNIT3/unit3_10_31_10_2025.php'],
     ],
     'Unit 4' => [
         ['Program Alpha', '#'],
