@@ -68,6 +68,9 @@ $units = [
         ['Universal Access', 'MCA Unit – 3 Extra Practical’s for LAB/MCA_UNIT03_07_26-09-2025.php'],
         ['Config-Based Environment Setup', 'MCA Unit – 3 Extra Practical’s for LAB/MCA_UNIT03_08_26-09-2025.php'],
     ],
+    'CRUD OPERTAION' => [
+        ['Login Moduel', 'CRUD OPERATION/index.php'],
+    ],
 ];
 
 function to_anchor_id($str) {
