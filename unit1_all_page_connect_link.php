@@ -34,7 +34,8 @@ $units = [
         ['Prepared statements to prevent SQL injection', 'UNIT3/unit3_10_31_10_2025.php'],
     ],
     'Unit 4' => [
-        ['Program Alpha', '#'],
+        ['Database connection', 'UNIT4/unit4_01_07_11_2025.php'],
+        ['MySQLi Table Creation && PDO Table Creation', 'UNIT4/unit4_02_07_11_2025.php'],
     ],
     'Unit 5' => [
         ['Program One', '#'],
